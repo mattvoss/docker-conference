@@ -18,7 +18,6 @@ AUTHORIZENET_ID=${AUTHORIZENET_ID:-X}
 AUTHORIZENET_KEY=${AUTHORIZENET_KEY:-X}
 
 PORT=${PORT:-3001}
-PREFIX=${PREFIX:-}
 
 # configure messaging settings.json
 sed 's/{{MYSQL_HOST}}/'${MYSQL_HOST}'/' -i /data/conference-checkin/config/settings.json

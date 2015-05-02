@@ -12,7 +12,7 @@ RUN apt-get update && apt-get upgrade -y && apt-get clean
 
 RUN apt-get install -y wget curl unzip build-essential checkinstall zlib1g-dev libyaml-dev libssl-dev telnet less \
     libgdbm-dev libreadline-dev libncurses5-dev libffi-dev iputils-ping iputils-tracepath rsyslog supervisor \
-    python-software-properties sendmail python g++ make software-properties-common rlwrap git-core vim && \
+    python-software-properties sendmail python g++ make software-properties-common rlwrap git-core vim librsvg2-dev && \
     apt-get clean && \
     add-apt-repository -y ppa:rwky/nodejs-legacy && apt-get update && apt-get upgrade -y && apt-get clean && \
     apt-get install -y nodejs
